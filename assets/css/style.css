@@ -1,4 +1,5 @@
-/* make shit boxy?*/
+/* make widths in pixels take up this precise size, ignoring 
+border and margin shenanigans*/
 * {
     box-sizing: border-box;
 }
@@ -11,18 +12,53 @@ body {
     width: 960;
 }
 
-header {
-    float:left;
-    background-color: #ffffff;
-    height:100%;
-    width:350px;
-    margin-left: 100px;
-    margin-bottom:0;
-    text-align: center;
+/*header working well aside some inline issues */
+.header {
+    background-color:#ffffff;
+    height:50px;
+    width:100%;
+    color: white;
     vertical-align: middle;
-    padding-top: 25px;
+    font-size: 20px;
+    float:left;
+    border-bottom-style: solid;
+    border-bottom-color: #cccccc;
+
+}
+
+header {
+    background-color: #4daba6;
+    height:100%;
+    width:300px;
+    margin-left: 100px;
+    float:left;
+    font-weight: bold;
+    text-align: center;
+}
+
+nav {
+    float:right;
+}
+
+
+
+a {
+    color:#a2aeb9;
+}
+
+.main {
+    float: left
 }
 
 h3 {
     color:#777777;
 } 
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: #a2aeb9;
+    text-align: center;
+}
