@@ -12,40 +12,46 @@ border and margin shenanigans*/
 /* Basic shit tune this*/
 body {
     color: #777777;
-    line-height: 30px;
+    line-height: 2;
     text-align: left;
-    width: 960;
     background-image: url("../images/gravel.png");
-
+    font-family: 'Oxygen', sans-serif;
 }
 
 /*header working well aside some inline issues */
 .header {
-    background-color:#ffffff;
-    height: 50px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height:50px;
+    color: #a2aeb9;
+    text-align: center;
+    background-color: white;
+    border-bottom: #4daba6;
+    border-bottom-style: solid;
+    border-bottom-width: 5px;
+}
+
+.header2 {
     width: 960px;
     margin: 0 auto;
-    color: white;
-    vertical-align: center;
-    font-size: 25px;
-    float:left;
-    border-bottom-style: solid;
-    border-bottom-color: #cccccc;
-    line-height: 2;
 }
 
 header {
     background-color: #4daba6;
     height:50px;
     width:300px;
-    margin-left:50px;
     float:left;
     font-weight: bold;
     text-align: center;
+    color: white;
+    font-size: 25px;
 }
 
 nav {
     float:right;
+    padding:5px;
 }
 
 img {
@@ -58,11 +64,13 @@ a {
 }
 
 .main {
-    margin-top:40px;
+    margin-top:75px;
     float: left;
     width:100%;
     background-color:white;
     border:100px;
+    line-height: 32px;
+    padding:10px;
 }
 
 #biography {
